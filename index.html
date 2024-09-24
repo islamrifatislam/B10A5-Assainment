@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Donation</title>
+<title>Document</title>
 <!-- daisyUI cdn  -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <!-- tailwind css cdn  -->
@@ -42,7 +42,7 @@ fontFamily : {
 </div>
 <div class="flex justify-center items-center gap-4">
 <img src="./assets/coin.png" alt="">
-<p class="text-gray-500"><span>5000</span> BDT</p>
+<p class="text-gray-500"><span id="main-balance">5000</span> BDT</p>
 </div>
 </div>
 </nav>
@@ -62,7 +62,7 @@ class="py-4 px-8 font-semibold rounded-lg border text-gray-500 hover:bg-primary_
 <div class="flex-1 space-y-4">
 <button class="btn text-gray-500 flex justify-center items-center">
 <img src="./assets/coin.png" alt="">
-<p><span>0</span> BDT</p>
+<p><spanid="total-donation"></span> BDT</p>
 </button>
 <h2 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
 <p class="text-gray-500"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
@@ -87,7 +87,7 @@ class="py-4 px-8 font-semibold rounded-lg border text-gray-500 hover:bg-primary_
 <div>
 <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-4" />
 </div>
-<button class="btn bg-primary_btn w-full text-xl">Donate Now</button>
+<button id="btn-donate" class="btn bg-primary_btn w-full text-xl">Donate Now</button>
 </div>
 </section>
 <!-- section 3 -->
@@ -113,5 +113,6 @@ class="py-4 px-8 font-semibold rounded-lg border text-gray-500 hover:bg-primary_
 <footer class="bg-nav_bg w-full h-30"></footer>
 <!--  sc js -->
 <script src="./js/utiliti.js"></script>
+<script src="./js/blog.js"></script>
 </body>
 </html>
