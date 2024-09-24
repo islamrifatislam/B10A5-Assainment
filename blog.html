@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+"nav_bg": '#F9F7F3',
+"primary_btn": "#B4F461",
+},
+fontFamily: {
+"customFont": ["Lexend", "sans-serif"]
+}
+}
+}
+}
+</script>
+</head>
+
+<body>
+<main class="container mx-auto">
+<div class="flex justify-between items-center flex-wrap">
+<div class="flex gap-4 items-center">
+<img src="./assets/faq.jpeg" alt="">
+<h2 class="text-3xl font-bold ">About <span class="text-yellow-400">JS DOM</span></h2>
+</div>
+<button id="navigate" class="btn bg-primary_btn text-xl"><a href="./index.html">Donation</a></button>
+</div>
+<div class="collapse collapse-arrow bg-base-200 my-2">
+<input type="radio" name="my-accordion-2" checked="checked" />
+<div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+<div class="collapse-content">
+<p>What is the DOM? The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. </p>
+</div>
+</div>
+<div class="collapse collapse-arrow bg-base-200">
+<input type="radio" name="my-accordion-2" />
+<div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+<div class="collapse-content">
+<p>Using getElementById: The getElementById method allows you to select an element by its ID<br>
+Using getElementsByClassName<br>
+Using getElementsByTagName<br>
+Using querySelector<br>
+Using querySelectorAll: <br>
+Changing the Text Content<br>
+Changing the HTML Content<br>
+Changing the Attribute Value
+</p>
+</div>
+</div>
+<div class="collapse collapse-arrow bg-base-200 my-2 ">
+<input type="radio" name="my-accordion-2" />
+<div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+why is it useful?</div>
+<div class="collapse-content">
+<p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.</p>
+</div>
+</div>
+<div class="collapse collapse-arrow bg-base-200">
+<input type="radio" name="my-accordion-2" />
+<div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+using the DOM?</div>
+<div class="collapse-content">
+<p>To perform any form of DOM manipulation, you have to access the document object first. Next we have the html root element which is a child of the document object.</p>
+</div>
+</div>
+</main>
+</body>
+
+</html>
